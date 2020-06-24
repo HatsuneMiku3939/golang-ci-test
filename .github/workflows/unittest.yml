@@ -5,6 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     name: unittest
     steps:
-    - name: unittest
-      id: unittest
-      uses: HatsuneMiku3939/golang-ci-unittest-action@master
+    - uses: actions/checkout@v2
+    - uses: HatsuneMiku3939/golang-ci-unittest-action@master
