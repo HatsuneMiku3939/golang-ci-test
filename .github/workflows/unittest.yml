@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: unittest
+    steps:
+    - name: unittest
+      id: unittest
+      uses: HatsuneMiku3939/golang-ci-unittest-action@master
