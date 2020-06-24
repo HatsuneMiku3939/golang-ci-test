@@ -1,0 +1,6 @@
+unittest:
+  image:
+    name: hatsunemiku/golang-ci-unittest-action:latest
+    entrypoint: ["/bin/sh", "-c"]
+  script:
+    - /entrypoint.sh
