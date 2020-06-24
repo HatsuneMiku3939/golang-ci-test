@@ -1,0 +1,16 @@
+version: 2
+
+jobs:
+  unittest:
+    docker:
+      - image: hatsunemiku/golang-ci-unittest-action:latest
+    steps:
+      - checkout
+      - run:
+          command: /entrypoint.sh
+
+workflows:
+  version: 2
+  unittest:
+    jobs:
+    - unittest
